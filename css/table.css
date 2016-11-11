@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
 
+div.table-title.add-vspace {
+  padding-top: 80px;
+}
 
 div.table-title {
   display: block;
@@ -19,7 +22,6 @@ div.table-title {
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;
 }
-
 
 /*** Table Styles **/
 
