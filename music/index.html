@@ -14,81 +14,143 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/table.css">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 	<script src="js/jquery.slides.min.js"></script>
 	<script>
 	 $(function(){
-       $("#slides").slidesjs({
-         width: 940,
-         height: 528,
-		 navigation: {
-			active: true,       
-			effect: "slide"
-         },
-		 pagination: {
-			active: false,
-			effect: "slide"
-        }
-       });
-     });
+		 $("#slides").slidesjs({
+		 width: 470,
+		 height: 264,
+			 navigation: {
+				active: false,       
+				effect: "slide"
+		 },
+			 pagination: {
+				active: false,
+				effect: "slide"
+		}
+	       });
+         });
      </script>
 	
+     <script>
+	var browserType;
+
+	if (document.layers) {browserType = "nn4"}
+	if (document.all) {browserType = "ie"}
+	if (window.navigator.userAgent.toLowerCase().match("gecko")) {
+	 browserType= "gecko"
+	}
+
+	function hide2() {
+	  if (browserType == "gecko" )
+	     document.poppedLayer =
+		 eval('document.getElementById("realtooltip2")');
+	  else if (browserType == "ie")
+	     document.poppedLayer =
+		eval('document.getElementById("realtooltip2")');
+	  else
+	     document.poppedLayer =
+		eval('document.layers["realtooltip2"]');
+	  document.poppedLayer.style.display = "none";
+	}
+
+	function show2() {
+	  if (browserType == "gecko" )
+	     document.poppedLayer =
+		 eval('document.getElementById("realtooltip2")');
+	  else if (browserType == "ie")
+	     document.poppedLayer =
+		eval('document.getElementById("realtooltip2")');
+	  else
+	     document.poppedLayer =
+		 eval('document.layers["realtooltip2"]');
+	  document.poppedLayer.style.display = "inline";
+	}
+    </script>
+
     </head>
     <body>
 	<!--[if lt IE 7]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
-  
-  
-   <header class="t-siteheader">
+  <header class="t-siteheader">
     <a class="visuallyhidden focusable" href="#main">Skip Navigation</a>
 	<a href="http://miracardui-devel.de.s3-website.eu-central-1.amazonaws.com/">
-    	<img class="t-headerlogo" src="img/schmetterling.png" alt="logo">
+	  <img class="t-headerlogo" src="img/schmetterling.png" alt="logo">
 	</a>
     <nav class="t-nav--site">
-      <a class="t-nav__item t-title--navsite" href="/music">Selected Titles</a>
+      <a class="t-nav__item t-title--navsite" href="/music">Music</a>
+      <a class="t-nav__item t-title--navsite" href="#events">Concerts</a>
+      <a class="t-nav__item t-title--navsite" href="contact.html">Contact</a>
     </nav>
   </header>
   
   <hr class="style13">
   
-  <iframe width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&loop=1">
-  </iframe>
-
   <div role="main" class="t-body--site">
 	<section class="container">
+	        <div id="slides">
+               <img src="/img/cardui_banner.png" alt="Some alt text">	
+               <img src="/img/cardui_banner.png" alt="Some alt text"> 				
+            </div>
+    </section>
 	
-      <article class="t-tabs t-section" id="songs">
-	<ul id="day-1" class="t-tab__body t-grid t-before-1-6 t-after-1-6">
-	  <li class="t-grid__cell t-unit-1-2">
-	    <a class="t-media--row  clearfix" href="https://soundcloud.com/user-2377903/lets-do-it/s-IJtCP">
-	      <img width="100" height="100" class="t-media__aside" src="img/LaVieEnRose.png">
-	      <b class="t-media__body t-title-tabartist t-artist__name">Let's do it</b>
-	    </a>
-	  </li>
-	  <li class="t-grid__cell t-unit-1-2">
-	    <a class="t-media--row  clearfix" href="https://soundcloud.com/user-2377903/sous-le-ciel-de-paris/s-Pul2s">
-	      <img width="100" height="100" class="t-media__aside" src="img/LaVieEnRose2.png">
-	      <b class="t-media__body t-title-tabartist t-artist__name">Sous le ciel de Paris</b>
-	    </a>
-	  </li>
-	  <li class="t-grid__cell t-unit-1-2">
-	    <a class="t-media--row  clearfix" href="https://soundcloud.com/user-2377903/my-heart-belongs-to-daddy/s-eSBWY">
-	      <img width="100" height="100" class="t-media__aside" src="img/LaVieEnRose3.png">
-	      <b class="t-media__body t-title-tabartist t-artist__name">My heart belongs to daddy</b>
-	    </a>
-	  </li>
-	</ul>
-      </article>
-	  
-	  	  
-    </section>	
   </div>
   
+<div class="table-title">
+<h3>Videos</h3>
+</div>
+
+<!--
+<form>
+<input type=button onClick="hide2()" value="hide">
+<input type=button onClick="show2()" value="show">
+</form>
+-->
+
+
+<table class="table-fill">
+<tbody class="table-hover">
+
+<tr>
+<td class="text-left">Thuesday, December 13</td>
+<td class="text-left">Open stage</td>
+</tr>
+<tr>
+<td class="text-left">Thursday, April 6</td>
+<td class="text-left">Mr B.'s</td>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<div class="table-title add-vspace">
+   <h3>Audio</h3>
+</div>
+<table class="table-fill">
+<tbody class="table-hover">
+<tr>
+<td class="text-left"><iframe width="210" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&loop=1"></iframe></td>
+<td class="text-left"><iframe width="210" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&loop=1"></iframe></td>
+
+</td>
+</tr>
+<tr>
+<td class="text-left">Friday, July 15</td>
+<td class="text-left">Freies Musikzentrum München</td>
+</tr>
+</tbody>
+</table>
+
+
+  
    <hr class="style14">
-   
   <footer class="t-footer--site">
         <p class="t-footer--imp"><a href="impressum.html">Impressum & Datenschutz</a></p>
         <div class="t-links">
@@ -97,7 +159,16 @@
 		
   </footer>
  
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  
   </body>
   </html>
