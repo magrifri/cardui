@@ -130,6 +130,11 @@ td.text-left {
   text-align: left;
 }
 
+td.text-left-small {
+  text-align: left;
+  font-size:12pt
+}
+
 td.text-center {
   text-align: center;
 }
@@ -177,6 +182,11 @@ td.text-right {
  .video-title h4{
  font-size: 8pt;
  }
+ td.text-left-small {
+  text-align: left;
+  font-size:10pt
+ }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -186,4 +196,11 @@ td.text-right {
  .video-title h4{
  font-size: 6pt;
  }
+ 
+ td.text-left-small {
+  text-align: left;
+  font-size:8pt
+ } 
 }
+
+
