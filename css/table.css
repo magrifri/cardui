@@ -186,6 +186,11 @@ td.text-right {
   text-align: left;
   font-size:10pt
  }
+ 
+ td.text-left {
+  text-align: left;
+  font-size:10pt
+}
 
 }
 
@@ -201,6 +206,11 @@ td.text-right {
   text-align: left;
   font-size:8pt
  } 
+ 
+ td.text-left {
+  text-align: left;
+  font-size:8pt
+}
 }
 
 
