@@ -53,14 +53,16 @@
        });
      });
      </script>
-	 
-	 <script>
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function(e) {
-        $hamburger.toggleClass("is-active");
-        // Do something else, like open/close menu
-        });
-    </script>
+	
+	<script>
+	    jQuery(function($){
+    	     $( '.hamburger' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+     </script>
+
+
 
 	 
 	
@@ -89,6 +91,14 @@
            </span>
         </button>
         </div>
+		
+		<div class="responsive-menu">
+         <ul>
+           <li>1. Object</li>
+           <li>2. Object</li>
+         </ul>
+        </div>
+
 		
 	</div>	
 	<div class="hrule-head">

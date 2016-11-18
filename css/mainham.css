@@ -253,6 +253,13 @@ ul, li {
   color: #000000;
 }
 
+.responsive-menu{
+	display: none;
+}
+ 
+.expand {
+	display: block !important; 
+}
 
 
 
@@ -266,7 +273,7 @@ ul, li {
 }
 
 .t-nav--site .t-nav__item {
-  font-size: 14pt;
+  font-size: 12pt;
   margin: 0 1rem;
   text-align: right;
 }
@@ -788,7 +795,7 @@ ul, li {
    This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
   .t-media--row .t-media__aside {
     float: none;
     margin-right: 0;
@@ -813,6 +820,11 @@ ul, li {
 	position: relative;
 	top: 20pt;
  }
+ 
+ .t-nav--site {
+    display: none;
+  }
+ 
 
 }
 
@@ -835,6 +847,7 @@ ul, li {
     height: 100px;
     background-position: center center;
   }
+  
   .t-nav--site .t-nav__item {
     font-size: 8pt;
     margin: 0 0.5rem;
