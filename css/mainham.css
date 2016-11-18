@@ -257,11 +257,12 @@ ul, li {
 
 
 .t-nav--site {
-  position: relative;
-  top: 60pt;
-  margin: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   white-space: nowrap;
-  text-align: right;
+  text-align: center;
+  border: 3px solid purple;
 }
 
 .t-nav--site .t-nav__item {
@@ -834,14 +835,6 @@ ul, li {
     height: 100px;
     background-position: center center;
   }
-  
-  .t-nav--site {
-  position: relative;
-  top: 33pt;
-  margin: 2rem 0;
-  white-space: nowrap;
-  text-align: right;
-}
   .t-nav--site .t-nav__item {
     font-size: 8pt;
     margin: 0 0.5rem;
@@ -858,7 +851,7 @@ ul, li {
 .t-siteheader-ham .t-headerlogo {
   float: left;
   width: 100px;
-}
+  }
 
 
   .t-unit-1-2 {
