@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/mainham.css">
+	<link rel="stylesheet" href="css/hamburgers.css">
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+	 $(function(){
+       $("#slides").slidesjs({
+         width: 470,
+         height: 264,
+		 navigation: {
+			active: false,       
+			effect: "slide"
+         },
+		 pagination: {
+			active: false,
+			effect: "slide"
+        },
+		play: {
+		    active: false,
+            // [boolean] Generate the play and stop buttons.
+            // You cannot use your own buttons. Sorry.
+            effect: "slide",
+            // [string] Can be either "slide" or "fade".
+            interval: 5000,
+            // [number] Time spent on each slide in milliseconds.
+            auto: true,
+            // [boolean] Start playing the slideshow on load.
+            swap: false,
+            // [boolean] show/hide stop and play buttons
+            pauseOnHover: false,
+            // [boolean] pause a playing slideshow on hover
+            restartDelay: 2500
+            // [number] restart delay on inactive slideshow
+        }
+
+       });
+     });
+     </script>
+	
+	
+    </head>
+    <body>
+	<!--[if lt IE 7]>
+	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+	<![endif]-->
+  <header class="t-siteheader-ham">
+    <a class="visuallyhidden focusable" href="#main">Skip Navigation</a>
+	
+	<div class="head-logos">
+	   <img class="t-headerlogo" src="img/schmetterling.png" alt="logo">
+	
+	
+    <nav class="t-nav--site">
+      <a class="t-nav__item t-title--navsite" href="/music">Music</a>
+      <a class="t-nav__item t-title--navsite" href="/events.html">Concerts</a>
+      <a class="t-nav__item t-title--navsite" href="contact.html">Contact</a>
+    </nav>
+	
+	   <div class="hamburger-wrap">
+           <button class="hamburger hamburger--collapse hamburger--accessible js-hamburger" type="button">
+             <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+        </button>
+        </div>
+		
+	</div>	
+	<div class="hrule-head">
+	    <hr class="style13-ham">
+	</div>
+  </header>
+  
+    <nav class="sidemenu" id="menu">
+      <ul>
+        <li><a href="/music">Music</a></li>
+        <li><a href="/events.html">Concerts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> 
+    </nav>
+
+    <main id="panel">
+	  <div role="main">
+	     <section class="container-slideshow">
+	        <div id="slides">
+               <img src="img/cardui.jpg" alt="cardui"> 	
+               <img src="img/miracardui1.jpg" alt="cardui">
+               <img src="img/abschluss2.jpg" alt="cardui">	
+               <img src="img/abschluss1.jpg" alt="cardui">			   
+            </div>
+          </section>
+        </div>
+    </main>
+
+    <script src="js/slideout.min.js"></script>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+      // Toggle button
+	  document.querySelector('.hamburger').addEventListener('click', function() {
+        slideout.toggle();
+      });
+	  
+	 
+    </script>
+ 
+  
+
+  
+   <hr class="style14">
+   
+  <footer class="t-footer--site">
+        <p class="t-footer--imp"><a href="impressum.html">Impressum & Datenschutz</a></p>
+        <div class="t-links">
+	       <a class="ir t-links__item--facebook" href="http://facebook.com/CARDUI.JAZZ"> Follow: </a>
+	    </div>
+		
+  </footer>
+ 
+  <script src="js/hamburgers.js" async=""></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  
+  </body>
+  </html>
