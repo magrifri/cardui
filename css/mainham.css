@@ -971,6 +971,9 @@ ul, li {
    .hamburger-wrap {
     display: none;
   }
+  .t-nav--site {
+	  text-align: right;
+  }
 }
 
 /* ==========================================================================
