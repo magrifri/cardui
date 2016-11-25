@@ -155,7 +155,7 @@ textarea {
   position:relative;
   overflow: hidden;
   box-sizing: border-box;
-  
+  margin-top: 10px;
 }
 
 /* Show active item in the pagination */
