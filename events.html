@@ -13,7 +13,8 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mainham.css">
+	<link rel="stylesheet" href="css/hamburgers.css">
 	<link rel="stylesheet" href="css/table.css">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -21,86 +22,91 @@
 	<script src="js/jquery.slides.min.js"></script>
 	<script>
 	 $(function(){
-		 $("#slides").slidesjs({
-		 width: 470,
-		 height: 264,
-			 navigation: {
-				active: false,       
-				effect: "slide"
-		 },
-			 pagination: {
-				active: false,
-				effect: "slide"
-		}
-	       });
-         });
+       $("#slides").slidesjs({
+         width: 470,
+         height: 264,
+		 navigation: {
+			active: false,       
+			effect: "slide"
+         },
+		 pagination: {
+			active: false,
+			effect: "slide"
+        },
+		play: {
+		    active: false,
+            // [boolean] Generate the play and stop buttons.
+            // You cannot use your own buttons. Sorry.
+            effect: "slide",
+            // [string] Can be either "slide" or "fade".
+            interval: 5000,
+            // [number] Time spent on each slide in milliseconds.
+            auto: true,
+            // [boolean] Start playing the slideshow on load.
+            swap: false,
+            // [boolean] show/hide stop and play buttons
+            pauseOnHover: false,
+            // [boolean] pause a playing slideshow on hover
+            restartDelay: 2500
+            // [number] restart delay on inactive slideshow
+        }
+
+       });
+     });
      </script>
 	
-     <script>
-	var browserType;
-
-	if (document.layers) {browserType = "nn4"}
-	if (document.all) {browserType = "ie"}
-	if (window.navigator.userAgent.toLowerCase().match("gecko")) {
-	 browserType= "gecko"
-	}
-
-	function hide2() {
-	  if (browserType == "gecko" )
-	     document.poppedLayer =
-		 eval('document.getElementById("realtooltip2")');
-	  else if (browserType == "ie")
-	     document.poppedLayer =
-		eval('document.getElementById("realtooltip2")');
-	  else
-	     document.poppedLayer =
-		eval('document.layers["realtooltip2"]');
-	  document.poppedLayer.style.display = "none";
-	}
-
-	function show2() {
-	  if (browserType == "gecko" )
-	     document.poppedLayer =
-		 eval('document.getElementById("realtooltip2")');
-	  else if (browserType == "ie")
-	     document.poppedLayer =
-		eval('document.getElementById("realtooltip2")');
-	  else
-	     document.poppedLayer =
-		 eval('document.layers["realtooltip2"]');
-	  document.poppedLayer.style.display = "inline";
-	}
-    </script>
-
+	
     </head>
     <body>
-	<!--[if lt IE 7]>
-	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-	<![endif]-->
-  <header class="t-siteheader">
+	
+	<nav class="sidemenu" id="menu">
+      <ul>
+	    <li><a class="t-nav_item_side" href="http://miracardui-devel.de.s3-website.eu-central-1.amazonaws.com/">Home</a></li>
+        <li><a class="t-nav_item_side" href="/music">Music</a></li>
+        <li><a class="t-nav_item_side" href="/events.html">Concerts</a></li>
+        <li><a class="t-nav_item_side" href="contact.html">Contact</a></li>
+      </ul> 
+    </nav>
+
+  <main id="panel">
+  <header class="t-siteheader-ham">
     <a class="visuallyhidden focusable" href="#main">Skip Navigation</a>
-	<a href="http://miracardui-devel.de.s3-website.eu-central-1.amazonaws.com/">
-	  <img class="t-headerlogo" src="img/schmetterling.png" alt="logo">
-	</a>
+	
+	<div class="head-logos">
+	   <img class="t-headerlogo" src="img/schmetterling.png" alt="logo">
+	
     <nav class="t-nav--site">
+	  <a class="t-nav__item t-title--navsite" href="http://miracardui-devel.de.s3-website.eu-central-1.amazonaws.com/">Home</a>
       <a class="t-nav__item t-title--navsite" href="/music">Music</a>
-      <a class="t-nav__item t-title--navsite" href="#events">Concerts</a>
+      <a class="t-nav__item t-title--navsite" href="/events.html">Concerts</a>
       <a class="t-nav__item t-title--navsite" href="contact.html">Contact</a>
     </nav>
+	
+	   <div class="hamburger-wrap">
+           <button class="hamburger hamburger--collapse hamburger--accessible js-hamburger" type="button">
+             <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+        </button>
+        </div>
+		
+	</div>	
+	<div class="hrule-head">
+	    <hr class="style13-ham">
+	</div>
   </header>
   
-  <hr class="style13">
-  
-  <div role="main" class="t-body--site">
-	<section class="container">
+    
+	  <div role="main">
+	     <section class="container-slideshow">
 	        <div id="slides">
-               <img src="img/cardui_banner.png" alt="Some alt text">	
-               <img src="img/cardui_banner.png" alt="Some alt text"> 				
+               <img src="img/cardui_banner.png" alt="cardui"> 	
+               <img src="img/cardui_banner.png" alt="cardui">		   
             </div>
-    </section>
-	
-  </div>
-  
+          </section>
+        </div>
+
+
 <div class="table-title">
 <h3>Trop Sensible ...</h3>
 </div>
@@ -220,28 +226,40 @@
 <td class="text-left">Videoproduktion La Vie en Rose</td>
 <td class="text-left">Studio Weßling</td>
 </tr>
-
-
-
 </tbody>
 </table>
-
-
-
-
-  
-   <hr class="style14">
+		
+		
   <footer class="t-footer--site">
-        <p class="t-footer--imp"><a href="impressum.html">Impressum & Datenschutz</a></p>
         <div class="t-links">
 	       <a class="ir t-links__item--facebook" href="http://facebook.com/CARDUI.JAZZ"> Follow: </a>
 	    </div>
-		
+		<div class="t-footer--imp"><a href="impressum.html">Impressum & Datenschutz</a></>
   </footer>
+   </main>
  
+  <script src="js/hamburgers.js" async=""></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/slideout.min.js"></script>
+  <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 200,
+        'tolerance': 70,
+		'side': 'right'
+      });
 
+      // Toggle button
+	  document.querySelector('.hamburger').addEventListener('click', function() {
+        slideout.toggle();
+      });
+	  
+	 
+  </script>
+ 
+  
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
   <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

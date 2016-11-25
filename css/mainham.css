@@ -629,12 +629,11 @@ ul, li {
 }
 
 .t-footer--site {
-    position: absolute;
-    bottom: 0;
 	width: 100%;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 	padding-top: 15px;
 	height: 2em;
+	margin-top: 80px;
 }
 
 .t-footer--site .t-footer--imp {
