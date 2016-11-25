@@ -57,15 +57,22 @@
 	
     </head>
     <body>
-	<!--[if lt IE 7]>
-	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-	<![endif]-->
+	
+	<nav class="sidemenu" id="menu">
+      <ul>
+	    <li><a class="t-nav_item_side" href="http://miracardui-devel.de.s3-website.eu-central-1.amazonaws.com/">Home</a></li>
+        <li><a class="t-nav_item_side" href="/music">Music</a></li>
+        <li><a class="t-nav_item_side" href="/events.html">Concerts</a></li>
+        <li><a class="t-nav_item_side" href="contact.html">Contact</a></li>
+      </ul> 
+    </nav>
+
+  <main id="panel">
   <header class="t-siteheader-ham">
     <a class="visuallyhidden focusable" href="#main">Skip Navigation</a>
 	
 	<div class="head-logos">
 	   <img class="t-headerlogo" src="img/schmetterling.png" alt="logo">
-	
 	
     <nav class="t-nav--site">
       <a class="t-nav__item t-title--navsite" href="/music">Music</a>
@@ -87,15 +94,7 @@
 	</div>
   </header>
   
-    <nav class="sidemenu" id="menu">
-      <ul>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/events.html">Concerts</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul> 
-    </nav>
-
-    <main id="panel">
+    
 	  <div role="main">
 	     <section class="container-slideshow">
 	        <div id="slides">
@@ -106,15 +105,29 @@
             </div>
           </section>
         </div>
-    </main>
-
-    <script src="js/slideout.min.js"></script>
-    <script>
+  
+<!--  
+  <hr class="style13-ham">
+-->
+  <footer class="t-footer--site">
+        <div class="t-links">
+	       <a class="ir t-links__item--facebook" href="http://facebook.com/CARDUI.JAZZ"> Follow: </a>
+	    </div>
+		<div class="t-footer--imp"><a href="impressum.html">Impressum & Datenschutz</a></>
+  </footer>
+   </main>
+ 
+  <script src="js/hamburgers.js" async=""></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slideout.min.js"></script>
+  <script>
       var slideout = new Slideout({
         'panel': document.getElementById('panel'),
         'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70
+        'padding': 200,
+        'tolerance': 70,
+		'side': 'right'
       });
 
       // Toggle button
@@ -123,25 +136,9 @@
       });
 	  
 	 
-    </script>
+  </script>
  
   
-
-  
-   <hr class="style14">
-   
-  <footer class="t-footer--site">
-        <p class="t-footer--imp"><a href="impressum.html">Impressum & Datenschutz</a></p>
-        <div class="t-links">
-	       <a class="ir t-links__item--facebook" href="http://facebook.com/CARDUI.JAZZ"> Follow: </a>
-	    </div>
-		
-  </footer>
- 
-  <script src="js/hamburgers.js" async=""></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
   <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

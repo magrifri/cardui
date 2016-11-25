@@ -25,6 +25,13 @@ body {
     font-size: 1em;
     line-height: 1.4;
 }
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -46,14 +53,6 @@ body {
  * A better looking default horizontal rule
  */
 
-hr.style13 {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-	position: relative;
-	top: -12pt;
-}
-
 hr.style13-ham {  
 	height: 10px;
 	border: 0;
@@ -61,21 +60,11 @@ hr.style13-ham {
 	position: relative;
 }
 
-hr.style14 {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-	position: relative;
-	top: 40pt;
-}
-
-
 .hamburger-wrap {
     clear: right;
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	border: 3px solid orange;
 }
 
 
@@ -153,18 +142,17 @@ textarea {
         z-index: 0;
         width:auto;
         margin: 20px auto auto auto;
+		padding-bottom: 100px;
         position:relative;
 }
 
 .hrule-head
 {
-  border: 3px solid green;
 }
 
 .head-logos
 {
   position:relative;
-  border: 3px solid red;
   overflow: hidden;
   box-sizing: border-box;
   
@@ -187,17 +175,16 @@ textarea {
 
       .slideout-menu {
         position: fixed;
-        left: 0;
-        top: 155px;
-        bottom: 190px;
+        left: auto;
+        top: 0;
+        bottom: 0;
         right: 0;
         z-index: 0;
-        width: 256px;
+        width: 205px;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         display: none;
-		border: 3px solid magenta;
-		background-image: url('/img/cardui_bg.jpg');
+		background-color: #F8F8F8;
       }
 
       .slideout-panel {
@@ -227,6 +214,8 @@ textarea {
        display: block;
        color: #000;
        padding: 8px 16px;
+	   border-bottom: 0.5px solid white;
+	   border-top: 0.5px solid white;
        text-decoration: none;
     }
 
@@ -245,11 +234,6 @@ html {
   margin: 0 1em;
 }
 
-body {
-  max-width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
 
 a, a:visited {
   color: black;
@@ -324,7 +308,6 @@ ul, li {
   width: 100%;
   white-space: nowrap;
   text-align: center;
-  border: 3px solid purple;
 }
 
 .t-nav--site .t-nav__item {
@@ -332,6 +315,10 @@ ul, li {
   margin: 0 1rem;
   text-align: right;
 }
+
+.t-nav_item_side {
+    font-size: 12pt;
+}  
 
 .t-section {
   margin-bottom: 50px;
@@ -553,11 +540,6 @@ ul, li {
   opacity: 1;
 }
 
-/*
-.t-links {
- float: right;
- }
- */
  
 /* Image replaced social media links */
 .t-links__item--twitter,
@@ -647,15 +629,26 @@ ul, li {
 }
 
 .t-footer--site {
-  padding: 50px 0 2rem 0;
+    position: absolute;
+    bottom: 0;
+	width: 100%;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	padding-top: 15px;
+	height: 2em;
 }
 
 .t-footer--site .t-footer--imp {
  float: right;
+ margin-top: 7pt;
  font-size: 8pt;
  font-weight: normal;
 }
 
+.t-links {
+ float: right;
+ width: 10%;
+}
+ 
 .t-footer__title {
   color: #BBAB7C;
   text-shadow:  3px 3px 1px #96834E,
@@ -860,25 +853,16 @@ ul, li {
     position: static;
   }
   
-  hr.style13 {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-	position: relative;
-	top: -40pt;
- }
 
- hr.style14 {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-	position: relative;
-	top: 20pt;
- }
- 
  .t-nav--site {
     display: none;
   }
+  
+  .t-footer--site .t-footer--imp {
+     font-size: 6pt;
+	 width: 45%;
+  }
+
  
 
 }
@@ -909,7 +893,9 @@ ul, li {
 	text-align: right;
   }
   
-  
+  .t-nav_item_side {
+    font-size: 12pt;
+  }  
   
   .t-siteheader .t-headerlogo {
   float: left;
@@ -939,22 +925,29 @@ ul, li {
     visibility: visible;
   }
   
-  hr.style13 {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-	position: relative;
-	top: -40pt;
- }
- 
 
  hr.style14 {
 	height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-	position: relative;
-	top: 20pt;
+	position: absolute;
+	bottom: 20px;
  }
+ 
+ .slideout-menu {
+        position: fixed;
+        left: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 205px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        display: none;
+		background-color: #F8F8F8;
+      }
+
 
 }
 
@@ -973,6 +966,12 @@ ul, li {
 }
 
 
+
+@media screen and (min-width: 780px) {
+   .hamburger-wrap {
+    display: none;
+  }
+}
 
 /* ==========================================================================
    Print styles.
