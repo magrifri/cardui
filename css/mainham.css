@@ -276,7 +276,7 @@ ul, li {
 
 .t-siteheader-ham .t-headerlogo {
   float: left;
-  width: 150px;
+  width: 100px;
 }
 
 
@@ -311,9 +311,8 @@ ul, li {
 }
 
 .t-nav--site .t-nav__item {
-  font-size: 12pt;
-  margin: 0 1rem;
-  text-align: right;
+  font-size: 8pt;
+  margin: 0 0.5rem;
 }
 
 .t-nav_item_side {
@@ -866,6 +865,12 @@ ul, li {
 
 }
 
+@media only screen and (max-width: 570px) {
+  .t-nav--site {
+    display: none;
+  }
+}
+
 
 
 @media only screen and (max-width: 750px) {
@@ -972,6 +977,16 @@ ul, li {
   }
   .t-nav--site {
 	  text-align: right;
+  }
+  
+  .t-nav--site .t-nav__item {
+    font-size: 12pt;
+    margin: 0 1rem;
+    text-align: right;
+  }
+  .t-siteheader-ham .t-headerlogo {
+    float: left;
+    width: 150px;
   }
 }
 
