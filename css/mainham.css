@@ -119,10 +119,10 @@ textarea {
 	font-family:"Helvetica",sans-serif;}   
 	
 /* mark active link */
-#home #panel .t-siteheader-ham .head-logos .t-nav--site #home1,
-#events #panel .t-siteheader-ham .head-logos .t-nav--site #events1,
-#music #panel .t-siteheader-ham .head-logos .t-nav--site #music1,
-#contact #panel .t-siteheader-ham .head-logos .t-nav--site #contact1
+#home1,
+#events1,
+#music1,
+#contact1
 {
   font-weight: bold;
 }
