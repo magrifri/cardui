@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/mainham.css">
   <link rel="stylesheet" href="css/hamburgers.css">
   <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
   <script src="js/modernizr-2.8.3.min.js">
   </script>
   <script src="http://code.jquery.com/jquery-latest.min.js">
@@ -24,40 +26,6 @@
   window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')
   </script>
   <script src="js/jquery.slides.min.js">
-  </script>
-  <script>
-         $(function(){
-       $("#slides").slidesjs({
-         width: 470,
-         height: 264,
-                 navigation: {
-                        active: false,       
-                        effect: "slide"
-         },
-                 pagination: {
-                        active: false,
-                        effect: "slide"
-        },
-                play: {
-                    active: false,
-            // [boolean] Generate the play and stop buttons.
-            // You cannot use your own buttons. Sorry.
-            effect: "slide",
-            // [string] Can be either "slide" or "fade".
-            interval: 5000,
-            // [number] Time spent on each slide in milliseconds.
-            auto: true,
-            // [boolean] Start playing the slideshow on load.
-            swap: false,
-            // [boolean] show/hide stop and play buttons
-            pauseOnHover: false,
-            // [boolean] pause a playing slideshow on hover
-            restartDelay: 2500
-            // [number] restart delay on inactive slideshow
-        }
-
-       });
-     });
   </script>
 </head>
 <body id="contact">
@@ -103,12 +71,9 @@
       </div>
     </header>
     <div role="main">
-      <section class="container-slideshow">
-        <div id="slides">
-	    	<img src="img/mm_bild1_ban.jpg" alt="cardui"> 
-		    <img src="img/cardui_banner.png" alt="cardui">
+        <div class="contactimg">
+	    	<div><img src="img/mm_bild3_small.jpg"  alt="cardui"></div>
 		</div>
-      </section>
     </div>
     <div class="table-title">
       <h3>Mira Carduì</h3>
@@ -155,14 +120,17 @@
           document.querySelector('.hamburger').addEventListener('click', function() {
         slideout.toggle();
       });
-          
-         
-  </script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
-  <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.contactimg').slick({
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+		centerPadding: 100
+      });
+    });
   </script>
 </body>
 </html>

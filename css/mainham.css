@@ -126,7 +126,15 @@ textarea {
 {
   font-weight: bold;
 }
-   
+ 
+.contact-image
+{
+   width: 100%;
+   max-width: 80%;
+   height: auto;
+   margin: 20px 0 10px 0;
+} 
+
 /* SLIDESHOW */
 /* Prevent the slideshow from flashing on load */
 .slidesjs-container
