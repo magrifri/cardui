@@ -26,7 +26,7 @@ body {
     line-height: 1.4;
 }
 body {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
   text-align: center;
   height: 100%;
@@ -127,12 +127,10 @@ textarea {
   font-weight: bold;
 }
  
-.contact-image
+.contactimgwrap
 {
-   width: 100%;
-   max-width: 80%;
-   height: auto;
-   margin: 20px 0 10px 0;
+ float:left;
+ width: 320px;
 } 
 
 /* SLIDESHOW */
@@ -293,7 +291,7 @@ ul, li {
 
 .t-siteheader-ham .t-headerlogo {
   float: left;
-  width: 100px;
+  width: 80px;
 }
 
 
@@ -925,7 +923,7 @@ ul, li {
 
 .t-siteheader-ham .t-headerlogo {
   float: left;
-  width: 100px;
+  width: 80px;
   }
 
 
@@ -1003,7 +1001,7 @@ ul, li {
   }
   .t-siteheader-ham .t-headerlogo {
     float: left;
-    width: 150px;
+    width: 80px;
   }
 }
 
