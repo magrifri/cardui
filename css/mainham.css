@@ -122,11 +122,51 @@ textarea {
 #home1,
 #events1,
 #music1,
-#contact1
+#contact1,
+#pb1
 {
   font-weight: bold;
 }
  
+ div.pbgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or space-around */
+} 
+
+div.pbgrid a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  pointer-events: none;
+}
+
+div.pbgrid img {
+  max-width: 100%;
+}
+
+div.pbgrid figure {
+  margin:0;
+}
+
+div.table-title {
+  display: block;
+  margin: auto;
+  padding:5px;
+  width: 100%;
+  overflow: hidden;
+}
+.pb-title h3 {
+   text-align: left;
+   color: #000000;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
 .contactimgwrap
 {
  float:left;
