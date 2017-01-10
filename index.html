@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/mainham.css">
   <link rel="stylesheet" href="css/hamburgers.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <script src="js/modernizr-2.8.3.min.js">
   </script>
   <script src="http://code.jquery.com/jquery-latest.min.js">
@@ -28,7 +29,7 @@
          $(function(){
        $("#slides").slidesjs({
          width: 640,
-         height: 460,
+         height: 328,
                  navigation: {
                         active: false,       
                         effect: "slide"
@@ -43,7 +44,7 @@
             // You cannot use your own buttons. Sorry.
             effect: "slide",
             // [string] Can be either "slide" or "fade".
-            interval: 5000,
+            interval: 30000,
             // [number] Time spent on each slide in milliseconds.
             auto: true,
             // [boolean] Start playing the slideshow on load.
@@ -109,11 +110,15 @@
     <div role="main">
       <section class="container-slideshow">
         <div id="slides">
-		<img src="img/mm_bild3_t.jpg" alt="cardui"> 
-		<img src="img/mm_bild2_t.jpg" alt="cardui"> 
-		<img src="img/mm_bild4_t.jpg" alt="cardui">
-		<img src="img/abschluss2_t.jpg" alt="cardui"> 
-		<img src="img/cardui_wz_t.jpg" alt="cardui"></div>
+		   <img src="img/mm_bild3_t.jpg" alt="cardui"> 
+		   <img src="img/mm_bild2_t.jpg" alt="cardui"> 
+		   <img src="img/mm_bild4_t.jpg" alt="cardui">
+		   <img src="img/mm_bild9_t.jpg" alt="cardui">
+		   <img src="img/abschluss2_t.jpg" alt="cardui"> 
+		   <img src="img/cardui_wz_t.jpg" alt="cardui">
+		   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+           <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+		</div>
       </section>
     </div>
 	<!--  
