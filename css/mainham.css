@@ -133,6 +133,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* or space-around */
+  margin-top: 20px;
 } 
 
 div.pbgrid a {
@@ -156,6 +157,7 @@ div.pb-title {
   padding:5px;
   width: 100%;
   overflow: hidden;
+  text-align: left;
 }
 .pb-title h3 {
    text-align: left;
