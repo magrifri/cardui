@@ -170,6 +170,12 @@ div.pb-title {
    text-transform:uppercase;
 }
 
+#moveimage1
+{
+    position: relative;
+    top: -65px;
+}
+
 .contactimgwrap
 {
  float:left;
