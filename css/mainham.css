@@ -350,6 +350,12 @@ div.pb-title {
     }
 /*  END SLIDEOUT */	  
 
+
+.html5-video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
 html {
   background-image: url('/img/cardui_bg.jpg');
   background-size: cover;
