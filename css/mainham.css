@@ -355,6 +355,16 @@ div.pb-title {
   width: 100%    !important;
   height: auto   !important;
 }
+.abouttext {
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+}
+
+.abouttext p{
+  line-height: 130%;
+  text-align: justify;
+}
 
 html {
   background-image: url('/img/cardui_bg.jpg');
