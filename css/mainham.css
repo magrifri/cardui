@@ -1206,3 +1206,13 @@ ul, li {
 	page-break-after: avoid;
     }
 }
+
+a#logomovie  {
+  width: 20px;
+  height: 20px;
+  background-image: url('/img/movie_ico.png');
+  background-position: 70px 0;
+  background-repeat: no-repeat;
+}
+
+
